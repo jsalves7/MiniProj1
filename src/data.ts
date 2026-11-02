@@ -15,14 +15,14 @@ export const cv: CvData = {
   ],
 
   highlights: [
-    { value: '5 anos', label: 'de experiência' },
+    { value: '6 anos', label: 'de experiência' },
     { value: 'Sistemas distribuídos', label: 'e microsserviços' },
     { value: 'Setor da aviação', label: 'Azores Airlines' },
   ],
 
   about: {
     summary:
-      'Software Developer com 5 anos de experiência especializada no desenvolvimento e escalabilidade de ' +
+      'Software Developer com 6 anos de experiência especializada no desenvolvimento e escalabilidade de ' +
       'sistemas distribuídos/microserviços. Especializo-me na articulação entre o design de sistemas ' +
       'complexos e a resolução de desafios técnicos específicos do setor da aviação.',
     strengths: [
