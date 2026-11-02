@@ -18,19 +18,18 @@ export const cv: CvData = {
   highlights: [
     { value: '6 anos', label: 'de experiência' },
     { value: 'Sistemas distribuídos', label: 'e microsserviços' },
-    { value: 'Setor da aviação', label: 'Azores Airlines' },
+    { value: 'Setor da aviação', label: 'na Azores Airlines' },
   ],
 
   about: {
     summary:
-      'Software Developer com 6 anos de experiência especializada no desenvolvimento e escalabilidade de ' +
-      'sistemas distribuídos/microserviços. Especializo-me na articulação entre o design de sistemas ' +
-      'complexos e a resolução de desafios técnicos específicos do setor da aviação.',
+      'Sou Software Developer há 6 anos. Trabalho sobretudo em sistemas distribuídos e microsserviços, ' +
+      'e gosto de pegar em sistemas complexos e fazê-los resolver problemas concretos do setor da aviação.',
     strengths: [
-      'Arquitetura: Sistemas Distribuídos e Microsserviços.',
-      'APIs: Design de APIs de Alta Disponibilidade e Performance.',
-      'Infraestrutura: Escalabilidade, Integração de Sistemas e Otimização.',
-      'Domínio: Soluções Tecnológicas para o Setor da Aviação.',
+      'Arquitetura de sistemas distribuídos e microsserviços.',
+      'APIs de alta disponibilidade e bom desempenho.',
+      'Escalabilidade, integração de sistemas e otimização.',
+      'Soluções tecnológicas para o setor da aviação.',
     ],
     languages: [
       { name: 'Português', level: 'Língua materna' },
@@ -75,9 +74,9 @@ export const cv: CvData = {
     company: 'SATA | Azores Airlines',
     period: '2020 – atual',
     duties: [
-      'Desenvolvimento e manutenção do site da Azores Airlines.',
-      'Desenvolvimento e manutenção de diversas soluções para departamentos internos.',
-      'Suporte e manutenção da infraestrutura de desenvolvimento aplicacional.',
+      'Desenvolvo e mantenho o site da Azores Airlines.',
+      'Desenvolvo e mantenho várias soluções para departamentos internos.',
+      'Dou suporte à infraestrutura onde as aplicações são desenvolvidas.',
     ],
   },
 
@@ -88,11 +87,11 @@ export const cv: CvData = {
       company: 'DREQP – Direção Regional do Emprego e Qualificação Profissional',
       period: '2017 – 2018',
       bullets: [
-        'Gestão de trouble tickets (helpdesk) e apoio às plataformas internas e externas.',
-        'Criação de imagens Windows 10 com WDS e configuração de perfis de utilizadores.',
-        'Configuração e manutenção de servidores Windows Server 2003, 2008 e 2012, backups e correio Microsoft Exchange.',
-        'Configuração de clientes VPN, mapeamento e reconfiguração de rede, bastidores e switches.',
-        'Manutenção de equipamentos, impressoras multifunções e quiosques interativos.',
+        'Geria trouble tickets (helpdesk) e dava apoio às plataformas internas e externas.',
+        'Criava imagens de Windows 10 com WDS e configurava perfis de utilizador.',
+        'Configurava e mantinha servidores Windows Server 2003, 2008 e 2012, os backups e o correio em Microsoft Exchange.',
+        'Configurava clientes VPN, mapeava e reconfigurava a rede, e tratava dos bastidores e dos switches.',
+        'Mantinha equipamentos, impressoras multifunções e quiosques interativos.',
       ],
     },
     {
@@ -101,10 +100,10 @@ export const cv: CvData = {
       company: 'FormulaSim',
       period: '2017 – 2018',
       bullets: [
-        'Gestão, em part-time, de um negócio de simuladores de corrida 3D.',
-        'Instalação, configuração e manutenção de todo o material informático.',
-        'Configuração da rede local.',
-        'Ajuda ao utilizador na escolha e configuração do jogo; faturação com o software Verba.',
+        'Geria, em part-time, uma loja de simuladores de corrida 3D.',
+        'Instalava, configurava e mantinha todo o material informático.',
+        'Configurava a rede local.',
+        'Ajudava os clientes a escolher e configurar o jogo, e tratava da faturação no software Verba.',
       ],
     },
     {
@@ -113,10 +112,10 @@ export const cv: CvData = {
       company: 'Escola Básica Integrada de Água de Pau',
       period: '2016',
       bullets: [
-        'Apoio ao utilizador final (helpdesk) ao abrigo do programa Estagiar T.',
-        'Manutenção de servidores Windows Server 2008 e 2012.',
-        'Manutenção dos equipamentos das salas de aula e dos quiosques interativos.',
-        'Manutenção de software escolar (Sige3, BiblioNet, PaperCut) e melhoria do site em WordPress.',
+        'Dava apoio ao utilizador final (helpdesk), ao abrigo do programa Estagiar T.',
+        'Mantinha servidores Windows Server 2008 e 2012.',
+        'Tratava dos equipamentos das salas de aula e dos quiosques interativos.',
+        'Mantinha o software da escola (Sige3, BiblioNet, PaperCut) e melhorava o site em WordPress.',
       ],
     },
     {
@@ -125,9 +124,9 @@ export const cv: CvData = {
       company: 'Escola Básica Integrada de Arrifes',
       period: '2015',
       bullets: [
-        'Estágio de 3 meses em apoio ao utilizador final (helpdesk).',
-        'Atuação em cinco escolas públicas de Ponta Delgada e Lagoa.',
-        'Apoio técnico a computadores e equipamentos das escolas.',
+        'Estágio de 3 meses a dar apoio ao utilizador final (helpdesk).',
+        'Trabalhava em cinco escolas públicas de Ponta Delgada e Lagoa.',
+        'Dava apoio técnico aos computadores e aos equipamentos das escolas.',
       ],
     },
   ],
@@ -141,10 +140,10 @@ export const cv: CvData = {
   ],
 
   hobbies: [
-    { id: 'sports', icon: 'sports', title: 'Desporto', text: 'Gosto de me manter ativo e de praticar desporto sempre que posso.' },
-    { id: 'photography', icon: 'photography', title: 'Fotografia', text: 'Gosto de captar momentos e paisagens através da fotografia.' },
-    { id: 'motorcycling', icon: 'motorcycle', title: 'Motociclismo', text: 'Adoro andar de mota e explorar estradas novas.' },
-    { id: 'friends', icon: 'friends', title: 'Amigos', text: 'Gosto de conviver e passar tempo com os meus amigos.' },
+    { id: 'sports', icon: 'sports', title: 'Desporto', text: 'Gosto de estar em movimento. Sempre que posso, faço desporto.' },
+    { id: 'photography', icon: 'photography', title: 'Fotografia', text: 'Gosto de fotografar paisagens e momentos que não quero deixar passar.' },
+    { id: 'motorcycling', icon: 'motorcycle', title: 'Motociclismo', text: 'Andar de mota é das coisas de que mais gosto, sobretudo por estradas que ainda não conheço.' },
+    { id: 'friends', icon: 'friends', title: 'Amigos', text: 'Estar com os amigos é sempre tempo bem passado. Faço por não perder esses momentos.' },
   ],
 
   socials: [

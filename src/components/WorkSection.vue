@@ -10,7 +10,7 @@ defineProps<{ id: string; title: string; current: CvData['current']; previous: C
   <section :id="id" class="section alt">
     <div class="container">
       <h2>{{ title }}</h2>
-      <h3>Atualmente</h3>
+      <h3>Agora</h3>
       <article class="card current">
         <h4>{{ current.role }}</h4>
         <p class="company">{{ current.company }} · {{ current.period }}</p>
