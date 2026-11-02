@@ -1,11 +1,12 @@
 // Conteúdo do currículo (fonte: cv_joshua_alves.pdf). Sem morada nem data de nascimento.
 import type { CvData } from './types';
+import photo from './assets/joshua_alves.jpeg';
 
 export const cv: CvData = {
   person: {
     name: 'Joshua Alves',
     title: 'Software Developer',
-    photo: null,
+    photo,
   },
 
   sections: [
