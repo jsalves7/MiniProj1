@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import type { CvData } from '../types';
 
-defineProps<{ title: string; about: CvData['about']; education: CvData['education'] }>();
+defineProps<{ id: string; title: string; about: CvData['about']; education: CvData['education'] }>();
 </script>
 
 <template>
-  <section id="quem-sou-eu" class="section">
+  <section :id="id" class="section">
     <div class="container">
       <h2>{{ title }}</h2>
       <div class="two-col">

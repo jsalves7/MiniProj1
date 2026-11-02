@@ -177,4 +177,5 @@ ul.plain li { margin-bottom: .35rem; }
   .hobbies { grid-template-columns: 1fr; }
   .section { padding: 2.5rem 0; }
   .footer-inner { justify-content: center; flex-direction: column; }
+  .socials { justify-content: center; }
 }

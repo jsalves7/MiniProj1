@@ -6,23 +6,35 @@ const props = defineProps<{ name: string; sections: CvSection[] }>();
 
 const open = ref(false);
 const activeId = ref('');
-let observer: IntersectionObserver | null = null;
+
+// Secção ativa: a última cujo topo já passou 40% do ecrã; no fim da página, a última.
+function updateActive() {
+  const ids = props.sections.map((s) => s.id);
+  const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  let current = '';
+  for (const id of ids) {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top <= window.innerHeight * 0.4) current = id;
+  }
+  activeId.value = atBottom ? (ids[ids.length - 1] ?? '') : current;
+}
+
+function onKeydown(e: KeyboardEvent) {
+  if (e.key === 'Escape') open.value = false;
+}
 
 onMounted(() => {
-  if (!('IntersectionObserver' in window)) return;
-  observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) if (entry.isIntersecting) activeId.value = entry.target.id;
-    },
-    { rootMargin: '-40% 0px -55% 0px' }
-  );
-  for (const s of props.sections) {
-    const el = document.getElementById(s.id);
-    if (el) observer.observe(el);
-  }
+  updateActive();
+  window.addEventListener('scroll', updateActive, { passive: true });
+  window.addEventListener('resize', updateActive);
+  window.addEventListener('keydown', onKeydown);
 });
 
-onBeforeUnmount(() => observer?.disconnect());
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', updateActive);
+  window.removeEventListener('resize', updateActive);
+  window.removeEventListener('keydown', onKeydown);
+});
 </script>
 
 <template>

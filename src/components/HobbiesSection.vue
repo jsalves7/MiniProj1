@@ -2,11 +2,11 @@
 import type { CvHobby } from '../types';
 import AppIcon from './AppIcon.vue';
 
-defineProps<{ title: string; hobbies: CvHobby[] }>();
+defineProps<{ id: string; title: string; hobbies: CvHobby[] }>();
 </script>
 
 <template>
-  <section id="hobbies" class="section">
+  <section :id="id" class="section">
     <div class="container">
       <h2>{{ title }}</h2>
       <ul class="hobbies">

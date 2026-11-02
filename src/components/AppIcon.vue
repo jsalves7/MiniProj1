@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { ICONS } from '../icons';
+import { ICONS, type IconName } from '../icons';
 
-const props = defineProps<{ name: string }>();
-const markup = computed(() => ICONS[props.name] ?? '');
+const props = defineProps<{ name: IconName }>();
+const markup = computed(() => ICONS[props.name]);
 </script>
 
 <template>

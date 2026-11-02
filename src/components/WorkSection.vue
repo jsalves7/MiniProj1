@@ -3,11 +3,11 @@ import type { CvData } from '../types';
 import JobAccordionItem from './JobAccordionItem.vue';
 import SkillsChips from './SkillsChips.vue';
 
-defineProps<{ title: string; current: CvData['current']; previous: CvData['previous']; skills: CvData['skills'] }>();
+defineProps<{ id: string; title: string; current: CvData['current']; previous: CvData['previous']; skills: CvData['skills'] }>();
 </script>
 
 <template>
-  <section id="o-que-faco" class="section alt">
+  <section :id="id" class="section alt">
     <div class="container">
       <h2>{{ title }}</h2>
       <h3>Atualmente</h3>
