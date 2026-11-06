@@ -1,0 +1,25 @@
+{
+  "name": "miniproj1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Currículo de Joshua Alves como Single Page Application (Vue + TypeScript + Vite)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.5",
+    "vite-plugin-singlefile": "^2.3.4",
+    "vitest": "^3.2.7",
+    "vue-tsc": "^3.3.14"
+  }
+}
